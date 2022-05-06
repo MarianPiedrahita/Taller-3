@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DebugIndex : MonoBehaviour
 {
 
     ChangeColor changeColor;
+    [SerializeField] Text indexText;
 
     void Start()
     {
@@ -23,6 +25,7 @@ public class DebugIndex : MonoBehaviour
         }
 
         Debug.Log(changeColor.index + 1);
+        indexText.text = (changeColor.index + 1).ToString();
     }
 
 
