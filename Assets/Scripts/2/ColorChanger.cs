@@ -8,10 +8,6 @@ public class ColorChanger : MonoBehaviour
 
 
     public static event Action OnButtonClicked;
-
-    public void Click()
-    {
-    }
     
     private void Update()
     {
